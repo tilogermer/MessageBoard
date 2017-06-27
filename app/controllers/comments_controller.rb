@@ -24,6 +24,11 @@ class CommentsController < ApplicationController
 		end
 	end
 
+	def destroy
+		@comment.destroy
+		redirect_to message_path(@message)
+	end
+
 	private
 	def comment_params
 		params.require(:comment).permit(:content)
