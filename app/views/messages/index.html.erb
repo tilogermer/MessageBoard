@@ -1,2 +1,6 @@
-<h1>new Message Board on rails</h1>
-<p>First lesson</p>
+<h1>Index View</h1>
+<% @messages.each do |message| %>
+<h2><%= message.title %></h2>
+<% end %>
+
+<%= link_to "New Message", new_message_path %>
