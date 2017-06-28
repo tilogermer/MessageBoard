@@ -21,5 +21,14 @@ test:
   database: db/test
 
 production:
+<<<<<<< HEAD
   <<: *default
   database: db/production
+=======
+  adapter: postgresql
+  database: todoism
+  encoding: utf8
+  min_messages: warning
+  pool: 5
+  timeout: 5000
+>>>>>>> fbca87804d3244c54b6594c293856b7e58a0bf4a
